@@ -1,0 +1,19 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App button {
+  background-color: white;
+  color: #00b2b2;
+  border: 1px solid #00b2b2;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.App button:hover {
+  background-color: #00b2b2;
+  color: white;
+}

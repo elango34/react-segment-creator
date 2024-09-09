@@ -1,0 +1,151 @@
+/* src/Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal {
+  background-color: white;
+  width: 35vw;
+  height: 100%;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  background-color: #00b2b2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.modal-content {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.schema-block {
+  margin-bottom: 10px;
+}
+
+.selected-schema {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-input,
+.custom-select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: none;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background-color: #00b2b2;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: white;
+  color: red;
+  margin-left: 10px;
+}
+
+.remove-schema-btn {
+  padding: 5px 8px;
+  max-height: 37px;
+  font-size: 20px;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #00b2b2;
+  font-weight: 800;
+  background: #00b2b22e;
+  border-radius: 4px;
+}
+
+.remove-schema-btn:hover {
+  cursor: pointer;
+}
+
+.info {
+  font-size: 14px;
+  color: #666;
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.add-schema-btn {
+  background: none;
+  border: none;
+  color: #00b2b2;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
